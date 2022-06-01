@@ -1,0 +1,19 @@
+{
+  "name": "minn0601",
+  "version": "1.0.0",
+  "description": "w我的 测试用例",
+  "main": "index.js",
+  "scripts": {
+    "test": "minn520"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sophil-minn/npm0601.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sophil-minn/npm0601/issues"
+  },
+  "homepage": "https://github.com/Sophil-minn/npm0601#readme"
+}
