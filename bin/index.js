@@ -14,10 +14,7 @@ program
   .usage('<command> [options]')
   .version(pkg.version)
   .option('-d, --debug', '是否开启调试模式', false)
-  .option('-e, --envName <envName>', '获取环境变量名称');
- 
-  
-
+  .option('-e, --envName <envName>', '获取环境变量名称')
 
 // command 注册命令
 const clone = program.command('clone <source> [destination]');
