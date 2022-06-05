@@ -15,11 +15,15 @@ program
   .version(pkg.version)
   .option('-d, --debug', '是否开启调试模式', false)
   .option('-e, --envName <envName>', '获取环境变量名称')
-  .parse(process.argv)
-  program.opts()
-  
-
-  console.log(program.opts().debug);
-  // console.log(program.opts());
-  console.log(program.opts().envName);
-  // console.log(program.outputHelp());
+ 
+ 
+// command 注册命令
+const clone = program.command('clone <source> [destination]');
+clone
+  .description('clone a repository')
+  .option('-f, -force', '是否强制克隆')
+  .action((source, destination, cmdObj) => {
+    console.log(source, 'do clone', destination, cmdObj.Force)
+  });
+program.parse(process.argv)
+// addCommand 注册命令
