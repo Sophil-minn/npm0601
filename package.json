@@ -1,0 +1,17 @@
+{
+  "name": "once-test-0601",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "once-test"
+  },
+  "bin": {
+    "once-test": "bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.5.1"
+  }
+}
