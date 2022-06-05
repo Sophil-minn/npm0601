@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "once-test-0601",
   "version": "1.0.1",
   "description": "",
@@ -14,4 +15,23 @@
   "dependencies": {
     "yargs": "^17.5.1"
   }
+=======
+  "name": "minn0601",
+  "version": "1.0.0",
+  "description": "w我的 测试用例",
+  "main": "index.js",
+  "scripts": {
+    "test": "minn520"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sophil-minn/npm0601.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sophil-minn/npm0601/issues"
+  },
+  "homepage": "https://github.com/Sophil-minn/npm0601#readme"
+>>>>>>> dc3d32c369fea7443acc2d9e4a2b0f89f6fae400
 }
