@@ -14,16 +14,32 @@ program
   .usage('<command> [options]')
   .version(pkg.version)
   .option('-d, --debug', '是否开启调试模式', false)
-  .option('-e, --envName <envName>', '获取环境变量名称')
+  .option('-e, --envName <envName>', '获取环境变量名称');
  
- 
+  
+
+
 // command 注册命令
 const clone = program.command('clone <source> [destination]');
 clone
   .description('clone a repository')
-  .option('-f, -force', '是否强制克隆')
+  .option('-f, --force', '是否强制克隆')
   .action((source, destination, cmdObj) => {
     console.log(source, 'do clone', destination, cmdObj.Force)
   });
 program.parse(process.argv)
 // addCommand 注册命令
+
+console.log(program.opts(), 'program.opts()')
+
+const service = new commander.Command('service');
+service
+  .command('start [port]')
+  .description('start service at some port')
+  .action(
+    (port) => {
+      console.log('do servie start', port);
+    }
+  )
+
+program.addCommand(service);
