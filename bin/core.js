@@ -9,7 +9,7 @@ console.log(exist);
 
 (
   async function() {
-    await new Promise(resove => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 2000))
     console.log('ok');
   }
 )();
