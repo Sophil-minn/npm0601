@@ -1,3 +1,5 @@
-import utils from './utils';
+import path from 'path';
+import { exists } from './utils';
 
-utils();
+console.log(path.resolve('.'));
+console.log(exists(path.resolve('.')));
