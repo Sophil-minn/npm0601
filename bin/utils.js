@@ -1,7 +1,8 @@
 
-import pathExistsSync from 'path-exists';
+// import pathExists from 'path-exists';
+const  pathExists = require('path-exists');
 
 export function exists(p) {
-  console.log(pathExistsSync, 'pathExists');
-  return pathExistsSync(p)
+  console.log(pathExists, 'pathExists');
+  return pathExists(p)
 }
