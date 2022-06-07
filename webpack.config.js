@@ -8,13 +8,13 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     filename: 'core.js',
   },
-  mode: 'production',
+  mode: 'development',
   target: 'node',
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules | dist)/, 
+        exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
           options: {

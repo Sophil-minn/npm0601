@@ -1,5 +1,5 @@
 import path from 'path';
-import { exists } from './utils';
+import { exists } from './utils.mjs';
 // const  pathExists = require('path-exists');
 import pathExists from 'path-exists';
 
