@@ -2,4 +2,7 @@
 
 // require('./core.mjs');
 
-import ('./core.mjs');
+// import ('./core.mjs');
+
+
+require('./process');
